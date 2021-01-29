@@ -58,6 +58,69 @@
             </div>
         </div>
     </section>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-med-1">
+                <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/milk.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/lolli_icon.png" alt=""
+                            class="d-none d-lg-inline">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, adipisci
+                            necessitatibus hic placeat modi sequi! Quasi quisquam quaerat facilis nemo obcaecati, autem
+                            in cupiditate doloribus vel porro! Aperiam, quod repudiandae!Quidem neque totam in non
+                            voluptatibus quos aliquid eos, nesciunt, similique molestiae optio. Officia nam excepturi
+                            distinctio explicabo, a, laudantium qui nesciunt fuga dolor corrupti nostrum velit, atque
+                            optio in!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/lolli_icon.png" alt=""
+                            class="d-none d-lg-inline">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident enim
+                            error quae at dolores, sed similique mollitia earum adipisci placeat molestias quasi sequi
+                            aspernatur voluptas! Nisi expedita incidunt quos!Velit magni, totam tempora error ducimus
+                            animi iusto quo eveniet itaque, laboriosam suscipit enim possimus laudantium quod porro
+                            ratione eligendi nostrum vitae culpa libero? Debitis, delectus ipsa? Similique, nobis iusto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/gumball.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-med-1">
+                <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/sprinkles.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2>MUSEUM OF CANDY</h2>
+                        <img src="/Users/khansen/Documents/GitHub/Museum_of_Candy/lolli_icon.png" alt=""
+                            class="d-none d-lg-inline">
+                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum dolor, neque et
+                            repudiandae dicta saepe, quod magni quo aliquid, debitis pariatur! Et repellendus
+                            consequatur minima, numquam doloribus aspernatur facere. Veritatis?Ea, error mollitia. Nulla
+                            suscipit et odio quos totam nihil laboriosam? Quisquam magnam rem fugiat velit dolores.
+                            Saepe cum harum ex aliquid cumque, facere neque eius corporis aliquam veniam praesentium!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,7 +133,14 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 
 </html>
